@@ -1,0 +1,1947 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+----------------------------------------------------------------------------------------
+PRESETS
+----------------------------------------------------------------------------------------
+*/
+/* line 15, ../sass/screen.scss */
+.pt-sans-regular {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 21, ../sass/screen.scss */
+.pt-sans-regular-bold {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* line 27, ../sass/screen.scss */
+.pt-sans-regular-italic {
+  font-family: "pt-sans",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* line 33, ../sass/screen.scss */
+.alternate-gothic {
+  font-family: "alternate-gothic-no-2-d",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 40, ../sass/screen.scss */
+html:not(.wf-active) body {
+  opacity: 0;
+  transition: opacity 500ms ease;
+  -webkit-transition: opacity 500ms ease;
+}
+
+/* line 41, ../sass/screen.scss */
+html.wf-active body {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  -webkit-transition: opacity 500ms ease;
+}
+
+/*
+----------------------------------------------------------------------------------------
+GRID TWEAKS
+----------------------------------------------------------------------------------------
+*/
+/* line 88, ../sass/screen.scss */
+.row {
+  max-width: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 88, ../sass/screen.scss */
+  .row {
+    margin: 0 65px;
+  }
+}
+
+/* line 89, ../sass/screen.scss */
+.isotope-wrapper > .row {
+  max-width: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 89, ../sass/screen.scss */
+  .isotope-wrapper > .row {
+    margin: 0 0 0 80px;
+  }
+}
+
+/* line 94, ../sass/screen.scss */
+header > .row {
+  margin-right: 0;
+}
+
+/* line 98, ../sass/screen.scss */
+body:not(.front-page) .row {
+  max-width: 1302px;
+}
+
+/* line 100, ../sass/screen.scss */
+#page {
+  margin: 0 auto;
+}
+
+/*
+----------------------------------------------------------------------------------------
+DEFAULTS
+----------------------------------------------------------------------------------------
+*/
+/* line 110, ../sass/screen.scss */
+#overlay {
+  background: #FFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5000;
+}
+
+/* line 116, ../sass/screen.scss */
+#artwork {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2001;
+  background: #FFF;
+  color: #000;
+}
+
+/* line 118, ../sass/screen.scss */
+body {
+  font-family: "alternate-gothic-no-2-d", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: normal;
+  background: #f7f9fb;
+  color: #414042;
+  text-transform: uppercase;
+}
+/* line 130, ../sass/screen.scss */
+body.resizing {
+  overflow: hidden;
+}
+@media screen and (max-width: 669px) {
+  /* line 132, ../sass/screen.scss */
+  body.resizing .grid {
+    overflow: hidden;
+    /* opacity: 0; */
+  }
+}
+
+/*
+
+@media screen and (max-width: $breakpoint - 1) { 
+	
+	body { position: relative; }
+
+	body:after { content: ""; display: block; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; z-index: 1000; background: red; margin-bottom: -1px; } 	
+
+} 
+*/
+/* line 155, ../sass/screen.scss */
+a,
+a:link,
+a:visited,
+a:active,
+a:focus {
+  color: #454545;
+  outline: 0;
+}
+
+/* line 160, ../sass/screen.scss */
+a.is-checked,
+html:not(.touch) a:hover {
+  color: #000;
+}
+
+/* line 163, ../sass/screen.scss */
+input,
+button {
+  box-shadow: none;
+  padding: 0;
+  text-shadow: none;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  margin: 0;
+  background: none;
+  color: inherit;
+  overflow: hidden;
+  font-family: "alternate-gothic-no-2-d", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+/* line 184, ../sass/screen.scss */
+sup {
+  font-size: 75%;
+}
+
+/* line 189, ../sass/screen.scss */
+html.touch {
+  /*
+  	input,
+  	textarea,
+  	button,
+  	select,
+  	a,
+  
+  	ul {
+  	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  	}
+  */
+}
+
+/*
+----------------------------------------------------------------------------------------
+HEADER
+----------------------------------------------------------------------------------------
+*/
+/* line 213, ../sass/screen.scss */
+header {
+  height: 180px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 670px) {
+  /* line 213, ../sass/screen.scss */
+  header {
+    height: 218px;
+    padding-top: 52px;
+  }
+}
+/* line 219, ../sass/screen.scss */
+header .logo svg {
+  width: 85px;
+  height: 80px;
+  margin-top: -5px;
+  float: left;
+  /* margin-left: -15px;  */
+}
+/* line 221, ../sass/screen.scss */
+header .logo.guest svg {
+  width: 115px;
+  height: 120px;
+  margin-top: -30px;
+}
+/* line 234, ../sass/screen.scss */
+header ul li {
+  margin: 0 0 2px 2px;
+  overflow: hidden;
+}
+/* line 235, ../sass/screen.scss */
+header ul li a {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+@media screen and (min-width: 670px) {
+  /* line 235, ../sass/screen.scss */
+  header ul li a {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 670px) {
+  /* line 240, ../sass/screen.scss */
+  header .logo,
+  header .nav-1,
+  header .nav-2 {
+    width: 186px;
+  }
+}
+/* line 250, ../sass/screen.scss */
+header a:link,
+header a:visited,
+header a:active {
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+}
+/* line 254, ../sass/screen.scss */
+header .nav-1 {
+  display: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 254, ../sass/screen.scss */
+  header .nav-1 {
+    display: block;
+  }
+}
+/* line 262, ../sass/screen.scss */
+header .nav-1 ul li a {
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  position: relative;
+}
+/* line 264, ../sass/screen.scss */
+header .nav-1 ul li a:after {
+  background-image: url("../img/nav-both.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto 100%;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 0;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 5px;
+  top: 45%;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+}
+/* line 273, ../sass/screen.scss */
+header .nav-1 ul li a.is-checked:after {
+  opacity: 1;
+  height: 15px;
+  top: 0;
+}
+/* line 277, ../sass/screen.scss */
+header .nav-1 ul li.nav-design a:after {
+  width: 15px;
+  background-image: url("../img/nav-design.svg");
+}
+/* line 278, ../sass/screen.scss */
+header .nav-1 ul li.nav-illustration a:after {
+  width: 15px;
+  background-image: url("../img/nav-illustration.svg");
+}
+/* line 286, ../sass/screen.scss */
+header .nav-2 {
+  text-align: right;
+}
+@media screen and (min-width: 670px) {
+  /* line 286, ../sass/screen.scss */
+  header .nav-2 {
+    text-align: left;
+  }
+}
+/* line 291, ../sass/screen.scss */
+header .nav-2 a:link,
+header .nav-2 a:visited,
+header .nav-2 a:active {
+  color: #a7a9ac;
+}
+/* line 294, ../sass/screen.scss */
+header .nav-2 .current-menu-item a {
+  color: #000;
+}
+
+/* line 312, ../sass/screen.scss */
+html:not(.touch) header .nav-1 ul li a:hover:after {
+  opacity: 1;
+  height: 15px;
+  top: 0;
+}
+/* line 324, ../sass/screen.scss */
+html:not(.touch) header .nav-2 a:hover {
+  color: #000;
+}
+
+/* line 333, ../sass/screen.scss */
+.credit-tooltip {
+  position: absolute;
+  background: #454545;
+  top: 145px;
+  width: 90px;
+  border-radius: 7px;
+  opacity: 0;
+  display: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 333, ../sass/screen.scss */
+  .credit-tooltip {
+    display: block;
+  }
+}
+/* line 334, ../sass/screen.scss */
+.credit-tooltip a,
+.credit-tooltip a:hover {
+  color: #FFF !important;
+}
+/* line 337, ../sass/screen.scss */
+.credit-tooltip span {
+  color: #FFF;
+  padding: 7px 10px;
+  line-height: 15px;
+  display: block;
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  text-transform: none;
+}
+/* line 345, ../sass/screen.scss */
+.credit-tooltip span strong {
+  display: block;
+  font-weight: 700;
+  font-size: 11px;
+}
+/* line 347, ../sass/screen.scss */
+.credit-tooltip span a strong {
+  text-decoration: underline;
+}
+/* line 349, ../sass/screen.scss */
+.credit-tooltip span:before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  margin-top: -17px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #454545 transparent;
+}
+
+/*
+----------------------------------------------------------------------------------------
+LEFT NAV
+----------------------------------------------------------------------------------------
+*/
+/* line 369, ../sass/screen.scss */
+nav {
+  width: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 17px;
+  display: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 369, ../sass/screen.scss */
+  nav {
+    display: block;
+  }
+}
+/* line 371, ../sass/screen.scss */
+nav ul {
+  margin-top: 214px;
+  width: 56px;
+}
+/* line 373, ../sass/screen.scss */
+nav ul li {
+  margin: 0 0 21px;
+  display: block;
+  text-align: center;
+  /*
+  		&#proj_next a:hover { margin-left: 10px; }
+  		&#proj_prev a:hover { margin-left: -10px; }	
+  */
+}
+/* line 375, ../sass/screen.scss */
+nav ul li a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  overflow: hidden;
+}
+/* line 377, ../sass/screen.scss */
+nav ul li:last-of-type {
+  margin-bottom: 0;
+}
+/* line 379, ../sass/screen.scss */
+nav ul li#social-linkedin a, nav ul li#social-instagram a {
+  width: 23px;
+}
+/* line 381, ../sass/screen.scss */
+nav ul li#social-dribble a {
+  width: 22px;
+}
+/* line 382, ../sass/screen.scss */
+nav ul li#social-twitter a {
+  width: 26px;
+}
+/* line 384, ../sass/screen.scss */
+nav ul li#proj_next a, nav ul li#proj_prev a {
+  transition: margin-left 250ms ease-in-out;
+  -webkit-transition: margin-left 250ms ease-in-out;
+}
+/* line 392, ../sass/screen.scss */
+nav ul li#proj_grid {
+  padding-left: 4px;
+}
+/* line 397, ../sass/screen.scss */
+nav button {
+  position: absolute;
+  bottom: 21px;
+  left: 16px;
+  height: 20px;
+  width: 24px;
+  display: none;
+  border-top: 2px solid #bcbec0;
+  padding-top: 3px;
+}
+
+/* line 412, ../sass/screen.scss */
+.single-project nav ul {
+  padding-top: 4px;
+}
+
+/* line 421, ../sass/screen.scss */
+html:not(.touch) nav ul li#proj_next a:hover {
+  margin-left: 10px;
+}
+/* line 422, ../sass/screen.scss */
+html:not(.touch) nav ul li#proj_prev a:hover {
+  margin-left: -10px;
+}
+
+/*
+----------------------------------------------------------------------------------------
+FOOTER
+----------------------------------------------------------------------------------------
+*/
+@media screen and (min-width: 670px) {
+  /* line 437, ../sass/screen.scss */
+  footer {
+    padding-bottom: 20px;
+  }
+}
+/* line 439, ../sass/screen.scss */
+footer .copyright {
+  color: #b1b3b6;
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: none;
+  display: none;
+  /* padding-left: 0 */
+}
+@media screen and (min-width: 670px) {
+  /* line 439, ../sass/screen.scss */
+  footer .copyright {
+    display: block;
+  }
+}
+/* line 452, ../sass/screen.scss */
+footer .copyright a {
+  color: #b1b3b6;
+}
+/* line 457, ../sass/screen.scss */
+footer .tweet-post-share {
+  padding-top: 20px;
+  padding-bottom: 0;
+  text-align: justify;
+}
+@media screen and (min-width: 670px) {
+  /* line 457, ../sass/screen.scss */
+  footer .tweet-post-share {
+    text-align: right;
+    padding-bottom: 40px;
+  }
+}
+/* line 461, ../sass/screen.scss */
+footer .tweet-post-share a {
+  position: relative;
+  padding-left: 23px;
+  color: #939598;
+}
+@media screen and (min-width: 670px) {
+  /* line 461, ../sass/screen.scss */
+  footer .tweet-post-share a {
+    padding-right: 25px;
+  }
+}
+/* line 462, ../sass/screen.scss */
+footer .tweet-post-share a svg {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+/* line 464, ../sass/screen.scss */
+footer .tweet-post-share a svg * {
+  fill: #939598;
+  /* transition: fill 500ms ease-in-out; -webkit-transition: fill 500ms ease-in-out; */
+}
+@media screen and (min-width: 670px) {
+  /* line 469, ../sass/screen.scss */
+  footer .tweet-post-share a:last-of-type {
+    padding-right: 0;
+  }
+}
+/* line 473, ../sass/screen.scss */
+footer .tweet-post-share .justify {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 670px) {
+  /* line 473, ../sass/screen.scss */
+  footer .tweet-post-share .justify {
+    display: none;
+  }
+}
+/* line 480, ../sass/screen.scss */
+footer .mobile-footer {
+  background: #454545;
+  padding: 15px 0 14px;
+  position: relative;
+}
+/* line 482, ../sass/screen.scss */
+footer .mobile-footer ul {
+  padding: 0;
+  overflow: auto;
+}
+/* line 484, ../sass/screen.scss */
+footer .mobile-footer ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+/* line 486, ../sass/screen.scss */
+footer .mobile-footer ul li a {
+  color: #FFF;
+  position: relative;
+  padding-left: 23px;
+}
+/* line 488, ../sass/screen.scss */
+footer .mobile-footer ul li a svg {
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+/* line 492, ../sass/screen.scss */
+footer .mobile-footer ul li:last-of-type {
+  float: right;
+}
+@media screen and (min-width: 670px) {
+  /* line 480, ../sass/screen.scss */
+  footer .mobile-footer {
+    display: none;
+  }
+}
+/* line 501, ../sass/screen.scss */
+footer .back-to-grid {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 501, ../sass/screen.scss */
+  footer .back-to-grid {
+    font-size: 16px;
+    text-align: left;
+    padding-top: 18px;
+  }
+}
+/* line 507, ../sass/screen.scss */
+footer .back-to-grid a {
+  position: relative;
+  z-index: 10;
+}
+/* line 508, ../sass/screen.scss */
+footer .back-to-grid span {
+  display: none;
+}
+@media screen and (min-width: 1100px) {
+  /* line 508, ../sass/screen.scss */
+  footer .back-to-grid span {
+    display: inline-block;
+  }
+}
+/* line 509, ../sass/screen.scss */
+footer .back-to-grid a div {
+  display: none;
+}
+@media screen and (min-width: 670px) {
+  /* line 509, ../sass/screen.scss */
+  footer .back-to-grid a div {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 669px) {
+  /* line 519, ../sass/screen.scss */
+  .back-to-grid,
+  .tweet-post-share {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 670px) {
+  /* line 526, ../sass/screen.scss */
+  .front-page .tweet-post-share {
+    padding-right: 0;
+  }
+}
+
+/*
+
+
+	
+html:not(.touch) footer .tweet-post-share a:hover { color: #000; 
+
+		svg * { fill: #000; }
+			
+}	
+*/
+/*
+----------------------------------------------------------------------------------------
+ISOTOPE
+----------------------------------------------------------------------------------------
+*/
+/* line 554, ../sass/screen.scss */
+.isotope-outside {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 670px) {
+  /* line 561, ../sass/screen.scss */
+  .isotope-outside {
+    padding-right: 0;
+  }
+}
+/* line 565, ../sass/screen.scss */
+.grid {
+  opacity: 0;
+}
+@media screen and (min-width: 670px) {
+  /* line 565, ../sass/screen.scss */
+  .grid {
+    opacity: 1;
+  }
+}
+/* line 572, ../sass/screen.scss */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 576, ../sass/screen.scss */
+.element-item {
+  position: relative;
+  float: left;
+  height: auto;
+  margin: 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  overflow: hidden;
+}
+@media screen and (min-width: 670px) {
+  /* line 576, ../sass/screen.scss */
+  .element-item {
+    width: 156px;
+    height: 227px;
+    margin: 0 30px 30px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 576, ../sass/screen.scss */
+  .element-item {
+    margin: 0 15px 15px 0 !important;
+  }
+}
+/* line 606, ../sass/screen.scss */
+.element-item a {
+  display: block;
+  overflow: auto;
+  position: absolute;
+  z-index: 1000;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+/* line 609, ../sass/screen.scss */
+.element-item img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  float: left;
+}
+/* line 611, ../sass/screen.scss */
+.element-item * {
+  margin: 0;
+  padding: 0;
+}
+/* line 613, ../sass/screen.scss */
+.element-item .titles {
+  position: absolute;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  /*
+  		transition: transform 150ms ease-out; 
+  		transform: perspective(150px) rotateX(0deg) rotateY(0deg);
+  */
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  -webkit-transform: perspective(150px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(150px) rotateX(0deg) rotateY(0deg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 657, ../sass/screen.scss */
+html:not(.touch) .grid .element-item.illustration a:hover .titles {
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  -webkit-transform: perspective(250px) rotateX(90deg) rotateY(0deg);
+  transform: perspective(250px) rotateX(90deg) rotateY(0deg);
+}
+
+/* line 664, ../sass/screen.scss */
+html:not(.touch) .grid .element-item.design a:hover .titles {
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  -webkit-transform: perspective(150px) rotateX(0deg) rotateY(90deg);
+  transform: perspective(150px) rotateX(0deg) rotateY(90deg);
+}
+
+/* line 674, ../sass/screen.scss */
+.grid .element-item.design .titles {
+  background: transparent url("../img/overlays-02.svg") no-repeat 50% 50%/110px auto;
+}
+
+/* line 675, ../sass/screen.scss */
+.grid .element-item.illustration .titles {
+  background: transparent url("../img/overlays-01.svg") no-repeat 50% 50%/110px auto;
+}
+
+/* line 677, ../sass/screen.scss */
+.grid .element-item.bumper span.replace {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("../img/bumper.svg") no-repeat 50% 50%/112px auto;
+}
+@media screen and (max-width: 669px) {
+  /* line 677, ../sass/screen.scss */
+  .grid .element-item.bumper span.replace {
+    display: none !important;
+  }
+}
+
+/* line 692, ../sass/screen.scss */
+.ribbon-new.replace,
+.ribbon-updated.replace {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 69px;
+  height: 69px;
+}
+
+/* line 703, ../sass/screen.scss */
+.grid .element-item h2 {
+  display: block;
+  font-size: 17px;
+  color: #414042;
+  text-transform: uppercase;
+}
+
+/* line 710, ../sass/screen.scss */
+.grid .element-item h3,
+.grid .element-item h4 {
+  display: block;
+  font-size: 17px;
+  color: #b1b3b6;
+  text-transform: uppercase;
+}
+
+/* line 718, ../sass/screen.scss */
+.grid .element-item h2,
+.grid .element-item h3,
+.grid .element-item h4 {
+  line-height: 19px;
+}
+
+/*
+----------------------------------------------------------------------------------------
+SINGLE PROJECT
+----------------------------------------------------------------------------------------
+*/
+/* line 730, ../sass/screen.scss */
+#single-project {
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 670px) {
+  /* line 730, ../sass/screen.scss */
+  #single-project {
+    padding-bottom: 0;
+  }
+}
+/* line 737, ../sass/screen.scss */
+#single-project .single-project-wrap .image-caption,
+#single-project .single-project-wrap .content-container {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 746, ../sass/screen.scss */
+#single-project #lead-image-container,
+#single-project .image-container {
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  overflow: hidden;
+}
+/* line 749, ../sass/screen.scss */
+#single-project #lead-image-container img,
+#single-project .image-container img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 753, ../sass/screen.scss */
+#single-project #lead-image-container {
+  position: relative;
+}
+/* line 755, ../sass/screen.scss */
+#single-project #lead-image-container .titles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin: -75px 0 0 -75px;
+  width: 150px;
+  height: 150px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 777, ../sass/screen.scss */
+#single-project #lead-image-container .titles h2,
+#single-project #lead-image-container .titles h3,
+#single-project #lead-image-container .titles h4 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+}
+@media screen and (min-width: 670px) {
+  /* line 777, ../sass/screen.scss */
+  #single-project #lead-image-container .titles h2,
+  #single-project #lead-image-container .titles h3,
+  #single-project #lead-image-container .titles h4 {
+    font-size: 23px;
+  }
+}
+/* line 788, ../sass/screen.scss */
+#single-project #lead-image-container .titles h3,
+#single-project #lead-image-container .titles h4 {
+  color: #b1b3b6;
+}
+/* line 795, ../sass/screen.scss */
+#single-project #lead-image-container.design .titles {
+  background: transparent url("../img/overlays-02.svg") no-repeat 50% 50%/120px auto;
+}
+@media screen and (min-width: 670px) {
+  /* line 795, ../sass/screen.scss */
+  #single-project #lead-image-container.design .titles {
+    background-size: 150px auto;
+  }
+}
+@media screen and (min-width: 670px) {
+  /* line 799, ../sass/screen.scss */
+  #single-project #lead-image-container.design .titles h2 {
+    padding-top: 5px;
+  }
+}
+/* line 803, ../sass/screen.scss */
+#single-project #lead-image-container.illustration .titles {
+  background: transparent url("../img/overlays-01.svg") no-repeat 50% 50%/120px auto;
+}
+@media screen and (min-width: 670px) {
+  /* line 803, ../sass/screen.scss */
+  #single-project #lead-image-container.illustration .titles {
+    background-size: 150px auto;
+  }
+}
+@media screen and (min-width: 670px) {
+  /* line 807, ../sass/screen.scss */
+  #single-project #lead-image-container.illustration .titles h2 {
+    padding-top: 10px;
+  }
+}
+/* line 811, ../sass/screen.scss */
+#single-project #lead-image-container .ribbon-new.replace {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 69px;
+  height: 69px;
+}
+/* line 819, ../sass/screen.scss */
+#single-project #lead-image-container .ribbon-updated.replace {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 69px;
+  height: 69px;
+}
+/* line 831, ../sass/screen.scss */
+#single-project #secondary-content h4.press-title {
+  font-weight: 700;
+  /* margin-top: 1.3rem; */
+}
+/* line 832, ../sass/screen.scss */
+#single-project #secondary-content ul.awards {
+  margin-top: 0.625rem;
+  margin-bottom: 1.3rem;
+}
+/* line 834, ../sass/screen.scss */
+#single-project #secondary-content ul.awards li {
+  list-style-type: none;
+  background-position: 0 5px;
+  padding-left: 20px;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+/* line 835, ../sass/screen.scss */
+#single-project #secondary-content ul.awards li p {
+  padding-bottom: 0;
+}
+/* line 836, ../sass/screen.scss */
+#single-project #secondary-content ul.awards li.icon-square {
+  background-image: url("../img/bullet-square.svg");
+}
+/* line 837, ../sass/screen.scss */
+#single-project #secondary-content ul.awards li.icon-triangle {
+  background-image: url("../img/bullet-triangle.svg");
+}
+/* line 846, ../sass/screen.scss */
+#single-project .image-wrapper {
+  /* margin: 28px 0 32px; */
+  margin: 16px 0;
+}
+/* line 848, ../sass/screen.scss */
+#single-project .image-wrapper .image-container {
+  clear: both;
+}
+/* line 850, ../sass/screen.scss */
+#single-project .image-wrapper .image-caption {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 670px) {
+  /* line 850, ../sass/screen.scss */
+  #single-project .image-wrapper .image-caption {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 670px -1) {
+  /* line 846, ../sass/screen.scss */
+  #single-project .image-wrapper {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+/* line 870, ../sass/screen.scss */
+#single-project .gallery-images {
+  /*  margin-top: -52px;  */
+  margin-top: -37px;
+}
+/* line 872, ../sass/screen.scss */
+#single-project .content-container {
+  /* padding: 28px 0 32px; */
+  padding: 16px 0 32px;
+}
+/* line 874, ../sass/screen.scss */
+#single-project .content-container strong {
+  font-weight: 700;
+}
+/* line 875, ../sass/screen.scss */
+#single-project .content-container a {
+  text-decoration: underline;
+}
+/* line 876, ../sass/screen.scss */
+#single-project .content-container p {
+  padding-bottom: 1.3rem;
+}
+/* line 881, ../sass/screen.scss */
+#single-project .quote-container {
+  padding: 64px 0 74px;
+  clear: both;
+}
+/* line 883, ../sass/screen.scss */
+#single-project .quote-container blockquote p {
+  line-height: 1;
+  color: #414042;
+  font-size: 32px;
+}
+@media screen and (min-width: 670px) {
+  /* line 883, ../sass/screen.scss */
+  #single-project .quote-container blockquote p {
+    font-size: 50px;
+  }
+}
+/* line 885, ../sass/screen.scss */
+#single-project .quote-container blockquote p span {
+  color: #414042;
+  display: block;
+}
+@media screen and (min-width: 670px) {
+  /* line 885, ../sass/screen.scss */
+  #single-project .quote-container blockquote p span {
+    display: inline-block;
+  }
+}
+/* line 888, ../sass/screen.scss */
+#single-project .quote-container blockquote p a {
+  color: #414042;
+  display: inline;
+  line-height: 1.1;
+  overflow: hidden;
+  float: left;
+  font-size: 32px;
+  text-decoration: underline;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+  margin-top: 0;
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+}
+@media screen and (min-width: 670px) {
+  /* line 888, ../sass/screen.scss */
+  #single-project .quote-container blockquote p a {
+    font-size: 50px;
+  }
+}
+/* line 908, ../sass/screen.scss */
+#single-project .project-video .image-caption {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 670px) {
+  /* line 908, ../sass/screen.scss */
+  #single-project .project-video .image-caption {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 670px -1) {
+  /* line 906, ../sass/screen.scss */
+  #single-project .project-video {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+/* line 922, ../sass/screen.scss */
+#single-project .project-video iframe {
+  width: 100%;
+}
+
+/* line 930, ../sass/screen.scss */
+html:not(.touch) #single-project .quote-container blockquote p a:hover {
+  color: #000;
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+}
+
+/* line 935, ../sass/screen.scss */
+#lead-image-container,
+.single-body,
+.gallery-images,
+.project-video {
+  /* opacity: 0; */
+}
+
+/* line 942, ../sass/screen.scss */
+#project-pagination-mobile {
+  display: block;
+}
+/* line 944, ../sass/screen.scss */
+#project-pagination-mobile .ppm {
+  position: absolute;
+  z-index: 1;
+  margin-top: 50px;
+}
+@media screen and (min-width: 670px) {
+  /* line 942, ../sass/screen.scss */
+  #project-pagination-mobile {
+    display: none;
+  }
+}
+/* line 950, ../sass/screen.scss */
+#project-pagination-mobile a {
+  display: block;
+}
+/* line 952, ../sass/screen.scss */
+#project-pagination-mobile a:nth-of-type(1) {
+  margin: 0 15px;
+  float: right;
+}
+/* line 953, ../sass/screen.scss */
+#project-pagination-mobile a:nth-of-type(2) {
+  margin: 0 15px;
+  float: left;
+}
+/* line 955, ../sass/screen.scss */
+#project-pagination-mobile a svg {
+  height: 16px;
+}
+
+/*
+----------------------------------------------------------------------------------------
+PROFILE
+----------------------------------------------------------------------------------------
+*/
+/* line 970, ../sass/screen.scss */
+#profile .profile-headline {
+  font-size: 32px;
+  line-height: 1;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 670px) {
+  /* line 970, ../sass/screen.scss */
+  #profile .profile-headline {
+    margin-bottom: 60px;
+    font-size: 50px;
+  }
+}
+/* line 972, ../sass/screen.scss */
+#profile .profile-headline a {
+  text-decoration: underline;
+}
+/* line 976, ../sass/screen.scss */
+#profile .columns:not(.profile-headline):not(.profile-quote):not(.profile-legacy) {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 983, ../sass/screen.scss */
+#profile .columns:not(.profile-headline):not(.profile-quote):not(.profile-legacy) strong {
+  font-weight: 700;
+}
+/* line 991, ../sass/screen.scss */
+#profile .profile-intro p {
+  padding-bottom: 1.3rem;
+}
+/* line 995, ../sass/screen.scss */
+#profile .profile-social-wrap {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 670px) {
+  /* line 995, ../sass/screen.scss */
+  #profile .profile-social-wrap {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
+/* line 997, ../sass/screen.scss */
+#profile .profile-social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 999, ../sass/screen.scss */
+#profile .profile-social a {
+  text-align: center;
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  /*
+  		&:hover { color: #000; transition: color 250ms ease-in-out; -webkit-transition: color 250ms ease-in-out;
+  			
+  				svg * { fill: #000; transition: fill 250ms ease-in-out; -webkit-transition: fill 250ms ease-in-out; }
+  			}
+  */
+}
+/* line 1001, ../sass/screen.scss */
+#profile .profile-social a svg {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 1007, ../sass/screen.scss */
+#profile .profile-social a span {
+  display: block;
+  text-decoration: underline;
+  font-size: 22px;
+  padding-top: 10px;
+}
+/* line 1016, ../sass/screen.scss */
+#profile .profile-social a#profile-btn-email svg {
+  width: 35px;
+}
+/* line 1026, ../sass/screen.scss */
+#profile .profile-experience h3 {
+  font-weight: 700;
+}
+/* line 1028, ../sass/screen.scss */
+#profile .profile-experience ul {
+  padding-top: 10px;
+  padding-bottom: 45px;
+}
+/* line 1030, ../sass/screen.scss */
+#profile .profile-experience ul li {
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  padding: 2px 0 3px 19px;
+  font-size: 15px;
+}
+/* line 1032, ../sass/screen.scss */
+#profile .profile-experience ul li strong {
+  font-weight: 700;
+}
+/* line 1034, ../sass/screen.scss */
+#profile .profile-experience ul li a {
+  text-decoration: underline;
+}
+/* line 1038, ../sass/screen.scss */
+#profile .profile-experience ul.icon-square li {
+  background-image: url("../img/bullet-square.svg");
+}
+/* line 1039, ../sass/screen.scss */
+#profile .profile-experience ul.icon-triangle li {
+  background-image: url("../img/bullet-triangle.svg");
+}
+/* line 1040, ../sass/screen.scss */
+#profile .profile-experience ul.icon-diamond li {
+  background-image: url("../img/bullet-diamond.svg");
+}
+/* line 1041, ../sass/screen.scss */
+#profile .profile-experience ul.icon-talks li {
+  background-image: url("../img/bullet-talks.svg");
+}
+/* line 1042, ../sass/screen.scss */
+#profile .profile-experience ul.icon-experience li {
+  background-image: url("../img/bullet-experience.svg");
+}
+/* line 1048, ../sass/screen.scss */
+#profile .profile-quote {
+  padding-top: 55px;
+  padding-bottom: 85px;
+}
+/* line 1050, ../sass/screen.scss */
+#profile .profile-quote blockquote p {
+  line-height: 1;
+  color: #414042;
+  font-size: 32px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1050, ../sass/screen.scss */
+  #profile .profile-quote blockquote p {
+    font-size: 50px;
+  }
+}
+/* line 1052, ../sass/screen.scss */
+#profile .profile-quote blockquote p span {
+  display: block;
+}
+@media screen and (min-width: 670px) {
+  /* line 1052, ../sass/screen.scss */
+  #profile .profile-quote blockquote p span {
+    display: inline;
+  }
+}
+/* line 1060, ../sass/screen.scss */
+#profile .profile-clients h3 {
+  font-weight: 700;
+}
+/* line 1064, ../sass/screen.scss */
+#profile .client-logos-wrap {
+  padding: 30px 15px 140px;
+}
+/* line 1066, ../sass/screen.scss */
+#profile .client-logo {
+  position: relative;
+  text-align: center;
+}
+/* line 1068, ../sass/screen.scss */
+#profile .client-logo img {
+  position: relative;
+  z-index: 100;
+  opacity: 0.75;
+  transition: opacity 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out;
+}
+/* line 1070, ../sass/screen.scss */
+#profile .client-logo .dots {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+/* line 1072, ../sass/screen.scss */
+#profile .client-logo .dots div {
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #414042;
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+/* line 1074, ../sass/screen.scss */
+#profile .client-logo .dots div:nth-of-type(1) {
+  /* border-color:fuchsia; */
+  left: 0;
+  top: 0;
+  margin: -2px 0 0 -2px;
+}
+/* line 1075, ../sass/screen.scss */
+#profile .client-logo .dots div:nth-of-type(2) {
+  /* border-color:green; 	*/
+  right: 0;
+  top: 0;
+  margin: -2px -2px 0 0;
+}
+/* line 1076, ../sass/screen.scss */
+#profile .client-logo .dots div:nth-of-type(3) {
+  /* border-color:blue; 	*/
+  left: 0;
+  bottom: 0;
+  margin: 0 0 -2px -2px;
+}
+/* line 1077, ../sass/screen.scss */
+#profile .client-logo .dots div:nth-of-type(4) {
+  /* border-color:red; 	*/
+  right: 0;
+  bottom: 0;
+  margin: 0 -2px -2px 0;
+}
+/* line 1083, ../sass/screen.scss */
+#profile .client-logo a {
+  display: block;
+  width: 100%;
+  opacity: 0.75;
+  color: transparent;
+  transition: opacity 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 1087, ../sass/screen.scss */
+#profile .client-logo a:before {
+  content: "";
+  display: block;
+  padding-top: 90%;
+}
+/* line 1092, ../sass/screen.scss */
+#profile .client-logo:last-of-type {
+  float: left;
+}
+/* line 1097, ../sass/screen.scss */
+#profile .legacy-wrap {
+  padding-bottom: 50px;
+}
+/* line 1103, ../sass/screen.scss */
+#profile .profile-legacy {
+  padding-bottom: 50px;
+}
+/* line 1105, ../sass/screen.scss */
+#profile .profile-legacy a {
+  color: #414042;
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  display: inline;
+  padding-bottom: 0;
+  line-height: 1;
+  overflow: auto;
+  font-size: 32px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1105, ../sass/screen.scss */
+  #profile .profile-legacy a {
+    font-size: 50px;
+  }
+}
+/* line 1109, ../sass/screen.scss */
+#profile .profile-legacy a span {
+  display: inline-block;
+  float: left;
+  clear: both;
+  text-decoration: underline;
+}
+
+/* line 1120, ../sass/screen.scss */
+html:not(.touch) #profile .client-logo a:hover {
+  opacity: 1;
+}
+
+/* line 1121, ../sass/screen.scss */
+html:not(.touch) #profile .profile-legacy a:hover {
+  color: #000;
+  transition: color 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+}
+
+/*
+----------------------------------------------------------------------------------------
+SCRAPBOOK
+----------------------------------------------------------------------------------------
+*/
+/* line 1132, ../sass/screen.scss */
+#scrapbook {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 1139, ../sass/screen.scss */
+#scrapbook .cut {
+  background: url(../img/cut.png) repeat-x 0 100%;
+  overflow: auto;
+  background-size: auto 1px;
+  padding-bottom: 1px;
+  margin-top: -9px;
+  margin-bottom: 25px;
+  padding-right: 15px;
+}
+/* line 1141, ../sass/screen.scss */
+#scrapbook .cut svg {
+  height: 7px;
+  width: 26px;
+  float: right;
+}
+/* line 1149, ../sass/screen.scss */
+#scrapbook .awards {
+  padding-bottom: 30px;
+}
+/* line 1150, ../sass/screen.scss */
+#scrapbook .publications {
+  padding-bottom: 45px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1152, ../sass/screen.scss */
+  #scrapbook .awards,
+  #scrapbook .publications {
+    padding-bottom: 45px;
+  }
+}
+/* line 1155, ../sass/screen.scss */
+#scrapbook .awards h2,
+#scrapbook .publications h2 {
+  font-weight: 700;
+}
+/* line 1157, ../sass/screen.scss */
+#scrapbook .awards ul,
+#scrapbook .publications ul {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1157, ../sass/screen.scss */
+  #scrapbook .awards ul,
+  #scrapbook .publications ul {
+    padding-bottom: 20px;
+  }
+}
+/* line 1159, ../sass/screen.scss */
+#scrapbook .awards ul li,
+#scrapbook .publications ul li {
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  padding: 2px 0 3px 19px;
+  font-size: 15px;
+}
+/* line 1161, ../sass/screen.scss */
+#scrapbook .awards ul li strong,
+#scrapbook .publications ul li strong {
+  font-weight: 700;
+}
+/* line 1167, ../sass/screen.scss */
+#scrapbook .awards a,
+#scrapbook .publications a {
+  text-decoration: underline;
+}
+/* line 1171, ../sass/screen.scss */
+#scrapbook .publications ul li {
+  background-image: url("../img/bullet-square.svg");
+}
+/* line 1172, ../sass/screen.scss */
+#scrapbook .awards ul li {
+  background-image: url("../img/bullet-triangle.svg");
+}
+/* line 1175, ../sass/screen.scss */
+#scrapbook .clippings {
+  padding-top: 10px;
+}
+/* line 1177, ../sass/screen.scss */
+#scrapbook .clippings h2 {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+/* line 1179, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper {
+  overflow: auto;
+}
+/* line 1183, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 1185, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+/* line 1187, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .image-caption {
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+/* line 1191, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .image-caption strong {
+  font-weight: 700;
+}
+/* line 1193, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .image-caption a {
+  text-decoration: underline;
+}
+/* line 1195, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .image-caption.publication {
+  background: url("../img/bullet-square.svg") no-repeat 0 20px/12px 12px;
+  text-indent: 19px;
+}
+/* line 1196, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .image-caption.award {
+  background: url("../img/bullet-triangle.svg") no-repeat 0 20px/12px 12px;
+  text-indent: 19px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1202, ../sass/screen.scss */
+  #scrapbook .clippings .image-wrapper .image-container .image-caption {
+    width: 49%;
+  }
+  /* line 1204, ../sass/screen.scss */
+  #scrapbook .clippings .image-wrapper .image-container.half-width {
+    width: 49%;
+  }
+  /* line 1206, ../sass/screen.scss */
+  #scrapbook .clippings .image-wrapper .image-container.half-width[data-image-number="2"], #scrapbook .clippings .image-wrapper .image-container.half-width[data-image-number="4"], #scrapbook .clippings .image-wrapper .image-container.half-width[data-image-number="6"], #scrapbook .clippings .image-wrapper .image-container.half-width[data-image-number="8"] {
+    float: right;
+  }
+  /* line 1211, ../sass/screen.scss */
+  #scrapbook .clippings .image-wrapper .image-container.half-width .image-caption {
+    width: 100%;
+  }
+}
+/* line 1221, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .replace {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* line 1222, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: solid 5px #f7f9fb;
+  border-right: solid 5px transparent;
+  border-left: solid 5px #f7f9fb;
+  border-bottom: solid 5px transparent;
+}
+/* line 1232, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: solid 5px #f7f9fb;
+  border-right: solid 5px #f7f9fb;
+  border-left: solid 5px transparent;
+  border-bottom: solid 5px transparent;
+}
+/* line 1243, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .replace:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2000;
+  border-top: solid 5px transparent;
+  border-right: solid 5px transparent;
+  border-left: solid 5px #f7f9fb;
+  border-bottom: solid 5px #f7f9fb;
+}
+/* line 1253, ../sass/screen.scss */
+#scrapbook .clippings .image-wrapper .image-container .replace:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  border-top: solid 5px transparent;
+  border-right: solid 5px #f7f9fb;
+  border-left: solid 5px transparent;
+  border-bottom: solid 5px #f7f9fb;
+}
+/* line 1271, ../sass/screen.scss */
+#scrapbook .list-wrap {
+  margin-top: 15px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1271, ../sass/screen.scss */
+  #scrapbook .list-wrap {
+    margin-top: 30px;
+  }
+}
+
+/*
+----------------------------------------------------------------------------------------
+NEWSLETTER
+----------------------------------------------------------------------------------------
+*/
+/* line 1296, ../sass/screen.scss */
+#newsletter #intro {
+  padding-bottom: 20px;
+}
+/* line 1298, ../sass/screen.scss */
+#newsletter .columns:not(.newsletter-quote),
+#newsletter input {
+  font-family: "pt-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+}
+/* line 1306, ../sass/screen.scss */
+#newsletter .columns:not(.newsletter-quote) a,
+#newsletter input a {
+  text-decoration: underline;
+}
+/* line 1310, ../sass/screen.scss */
+#newsletter form {
+  padding: 50px 0;
+}
+/* line 1312, ../sass/screen.scss */
+#newsletter form label {
+  font-weight: bold;
+  padding: 5px 0;
+  display: block;
+}
+/* line 1314, ../sass/screen.scss */
+#newsletter form input {
+  background: white !important;
+  width: 100%;
+  display: block;
+  padding: 5px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1314, ../sass/screen.scss */
+  #newsletter form input {
+    margin-bottom: 25px;
+  }
+}
+/* line 1316, ../sass/screen.scss */
+#newsletter form input[type="submit"] {
+  padding: 0;
+  background: none !important;
+  width: auto;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (min-width: 670px) {
+  /* line 1316, ../sass/screen.scss */
+  #newsletter form input[type="submit"] {
+    font-size: 22px;
+  }
+}
+/* line 1318, ../sass/screen.scss */
+#newsletter form input:-ms-input-placeholder {
+  color: #AAA;
+}
+/* line 1328, ../sass/screen.scss */
+#newsletter .newsletter-quote {
+  padding-top: 55px;
+  padding-bottom: 85px;
+}
+/* line 1330, ../sass/screen.scss */
+#newsletter .newsletter-quote blockquote p {
+  line-height: 1;
+  color: #414042;
+  font-size: 32px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1330, ../sass/screen.scss */
+  #newsletter .newsletter-quote blockquote p {
+    font-size: 50px;
+  }
+}
+/* line 1341, ../sass/screen.scss */
+#newsletter label.error {
+  margin-top: -47px;
+  margin-right: 10px;
+  text-align: right;
+  float: right;
+  font-weight: 400 !important;
+  color: #ff7967;
+}
+@media screen and (min-width: 670px) {
+  /* line 1341, ../sass/screen.scss */
+  #newsletter label.error {
+    margin-top: -56px;
+  }
+}
+
+/*
+----------------------------------------------------------------------------------------
+404
+----------------------------------------------------------------------------------------
+*/
+/* line 1368, ../sass/screen.scss */
+#four04 {
+  margin-bottom: 50px;
+  line-height: 1;
+  color: #414042;
+  font-size: 32px;
+}
+@media screen and (min-width: 670px) {
+  /* line 1368, ../sass/screen.scss */
+  #four04 {
+    margin-top: -5px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 670px) {
+  /* line 1368, ../sass/screen.scss */
+  #four04 {
+    font-size: 50px;
+  }
+}
+/* line 1376, ../sass/screen.scss */
+#four04 .columns {
+  -ms-word-wrap: break-word;
+}
