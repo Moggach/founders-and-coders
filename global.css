@@ -50,4 +50,21 @@ li:hover {
    color: silver;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    font-size: medium;
+  }
 
+  
+
+  .side-bar ul {
+    display: flex;
+    position: fixed;
+    bottom: 1.5rem;
+    
+  }
+
+  .side-bar li {
+    margin: 1.5rem;
+  }
+}
