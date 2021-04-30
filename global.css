@@ -57,14 +57,29 @@ li:hover {
 
 
 
+.image-grid {
+  margin-left: 4rem;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+  
+  gap: 25px 25px;
+ 
+ 
+}
 
+.image-grid > img {
+ max-width: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   nav {
     font-size: medium;
   }
 
-  
+ .side-bar {
+   
+ }
 
   .side-bar ul {
     display: flex;
@@ -76,4 +91,14 @@ li:hover {
   .side-bar li {
     margin: 1.5rem;
   }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    
+    margin: 0 auto;
+  
+   
+  }
+
+
 }
