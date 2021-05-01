@@ -62,14 +62,15 @@ li:hover {
   display: grid;
   width: 80%;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   
-  gap: 25px 25px;
- 
  
 }
 
 .image-grid > img {
  max-width: 100%;
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,26 +78,23 @@ li:hover {
     font-size: medium;
   }
 
- .side-bar {
-   
- }
 
   .side-bar ul {
     display: flex;
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 1rem;
     
   }
 
   .side-bar li {
     margin: 1.5rem;
+    font-size: smaller;
   }
 
   .image-grid {
     grid-template-columns: 1fr;
-    
     margin: 0 auto;
-  
+    gap: 1rem;
    
   }
 
