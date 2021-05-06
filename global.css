@@ -20,10 +20,10 @@ nav {
 }
 
 .wrapper {
-  display: flex;
- 
+ display: flex;
  }
 
+ 
 ul {
     margin-left: 2rem;
 }
@@ -54,6 +54,7 @@ li:hover {
 .side-bar a:hover {
    color: silver;
 }
+
 
 
 .image-grid {
@@ -105,17 +106,28 @@ li:hover {
     font-size: medium;
   }
 
+.wrapper {display: block;}
 
-  .side-bar ul {
-    display: flex;
-    position: fixed;
-    bottom: 0.7rem; 
-  }
+ .side-bar {
+   margin-bottom: 2rem;
+   margin-top: -2rem;
 
-  .side-bar li {
-    margin: 1.5rem;
-    font-size: smaller;
-  }
+   
+  
+ }
+ .side-bar > ul {
+   display: flex;
+   font-size: x-small;
+   margin-top: -2.5rem;
+ }
+ 
+li {
+   
+   margin-right: 0.5rem;
+ }
+ 
+
+
 
   .image-grid {
     
