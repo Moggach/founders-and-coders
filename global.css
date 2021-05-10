@@ -20,6 +20,11 @@ nav {
   display: flex;
 }
 
+.dark-mode {
+  
+  margin-left: 50%;
+}
+
 .wrapper {
  display: flex;
  }
@@ -46,10 +51,6 @@ li:hover {
 .side-bar li {
     margin-top: 2rem;
     
-}
-
-.side-bar i {
-  
 }
 
 .side-bar a:visited {
@@ -160,16 +161,17 @@ li:hover {
   nav {
     font-size: medium;
   }
-
+ .dark-mode {display: none;}
+  
 .wrapper {display: block;}
 
  .side-bar {
    margin-bottom: 2rem;
    margin-top: -2rem;
-
-
   
  }
+
+
  .side-bar > ul {
    display: flex;
    font-size: x-small;
