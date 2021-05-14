@@ -68,56 +68,13 @@
         </li>
       </ul>
     </div>
-    <div class="modal-container">
-    <div class="image-grid">
-     
-      <img id="myImg1" src = "./images/Blog_Site.png" class="img-thumbnail" alt="Blog_Site">
-      <div class="caption01">Here is a caption</div>
-      <img id="myImg2" src = "./images/Book_Finder.png" class="img-thumbnail" alt="Book_Finder">
-      <div class="caption02">Here is a caption</div>
-      <img id="myImg3" src="./images/Card_Layouts.png" class="img-thumbnail" alt="Card_Layouts">
-      <div class="caption03">Here is a caption</div>
-      <img id="myImg4" src="./images/Trello_Copy.png" class="img-thumbnail" alt="Trello_Copy">
-      <div class="caption04">Here is a caption</div>
-    </div>
-   
-<div id="myModal" class="modal">
-
-
-  <span class="close">&times;</span>
-
-  <img class="modal-content" id="img01">
-
-
-  <div id="caption"></div>
-</div>
-</div>
-
-
+    <div class="cv-content">Here is where some CV content will go</div>
 </div>
     </div>
       <script>
-   
-var modal = document.getElementById('myModal');
-
-var images = document.querySelectorAll(".img-thumbnail");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-for(let i = 0; i < images.length; i++){
-  images[i].onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
 
 
-var span = document.getElementsByClassName("close")[0];
 
-
-span.onclick = function() {
-  modal.style.display = "none";
-} 
 
  
 const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
