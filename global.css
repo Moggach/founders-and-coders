@@ -1,4 +1,26 @@
 
+:root {
+  --bg-color: #f7f9fb;
+  --font-color: #2d2d2d;
+  --link-color: #DEDEDE;
+  
+  
+  
+ }
+  
+ [data-theme="dark"] {
+  --bg-color: #161625;
+  --font-color: #DEDEDE;
+  --link-color: #2d2d2d;
+  
+  
+ }
+ 
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,8 +28,9 @@
 }
 
 body {
-  background-color: #f7f9fb;
+  background-color:   var(--bg-color);
   font-family: "Montserrat", sans-serif;
+  color: var(--font-color);
 
 }
 
@@ -20,10 +43,71 @@ nav {
   display: flex;
 }
 
-.dark-mode {
-  
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
   margin-left: 50%;
 }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0b58b0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-text {
+  padding-top: 0.4rem;
+  font-size: medium;
+  text-transform: capitalize;
+  margin-left: 0.8rem;
+}
+
 
 .wrapper {
  display: flex;
@@ -48,18 +132,22 @@ li:hover {
     
 }
 
+.fab, .fas {
+  color: var(--font-color);
+}
+
+.fas:hover {
+  color: var(--link-color);
+}
+.fab:hover {
+  color: var(--link-color);
+}
+
 .side-bar li {
     margin-top: 2rem;
-    
+  
 }
 
-.side-bar a:visited {
-  color: black;
- }
-
-.side-bar a:hover {
-  color: silver; 
-}
 
 .image-grid {
   margin-left: 4rem;
@@ -73,7 +161,7 @@ li:hover {
     "caption01 caption02"
     "myIm3 myImg4"
     "caption03 caption04";
-    border: 1px black dotted;
+  
 
 }
 
@@ -95,8 +183,15 @@ li:hover {
 
 .image-grid > img {
   max-width: 100%;
-  
+  cursor: pointer;
  }
+
+ img:hover{
+  filter: brightness(80%);
+  transition: 0.3s;
+
+}
+
  
 .modal {
   display: none; 
@@ -161,7 +256,14 @@ li:hover {
   nav {
     font-size: medium;
   }
- .dark-mode {display: none;}
+
+ 
+.switch{
+  display: none;
+}
+.switch-text {
+  display: none;
+}
   
 .wrapper {display: block;}
 

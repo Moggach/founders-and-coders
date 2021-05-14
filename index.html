@@ -40,13 +40,14 @@
         <li>CodeWars</li>
         <li>FreeCodeCamp</li>
       </ul>
-    
-    <div class="dark-mode">
-      <label class="theme" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-    </label>
-   Dark Mode
-  </div>
+      
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+       
+      </label>
+   <div class="switch-text">
+    Switch Theme</div>
 </nav>
     <div class="wrapper">
     <div class="side-bar">
@@ -72,6 +73,7 @@
     </div>
     <div class="modal-container">
     <div class="image-grid">
+     
       <img id="myImg1" src = "./images/Blog_Site.png" class="img-thumbnail" alt="Blog_Site">
       <div class="caption01">Here is a caption</div>
       <img id="myImg2" src = "./images/Book_Finder.png" class="img-thumbnail" alt="Book_Finder">
@@ -120,7 +122,19 @@ span.onclick = function() {
   modal.style.display = "none";
 } 
 
-
+ 
+const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+ 
+function switchTheme(e) {
+   if (e.target.checked) {
+       document.documentElement.setAttribute('data-theme', 'dark');
+   }
+   else {
+       document.documentElement.setAttribute('data-theme', 'light');
+   }   
+}
+ 
+toggleSwitch.addEventListener('change', switchTheme, false);
 
 
    </script>
