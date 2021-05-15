@@ -160,8 +160,7 @@ a:visited {
   width: 80%;
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 4fr 1fr 4fr 1fr;
-  gap: 0px 0px;
+  gap: 1rem 1rem;
   grid-template-areas:
     "myImg1 myImg2"
     "caption01 caption02"
@@ -187,9 +186,14 @@ a:visited {
 
 .caption04 { grid-area: caption04; }
 
-.image-grid > img {
-  max-width: 100%;
+ img {
+  width: 100%;
+  height: auto;
   cursor: pointer;
+ }
+
+ #myImg2 {
+   background-color: #e9ecef;
  }
 
  img:hover{
@@ -197,7 +201,6 @@ a:visited {
   transition: 0.3s;
 
 }
-
  
 .modal {
   display: none; 
@@ -258,9 +261,10 @@ a:visited {
 }
 
 .cv-content {
-  outline: black 1px solid;
   margin-left: 4rem;
   width: 80%;
+  padding: 2rem;
+  line-height: 1.8rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -328,5 +332,10 @@ li {
     top: 220px;
     
     
+  }
+
+  .cv-content {
+    margin-left: 0;
+    width: 90%;
   }
 }
