@@ -6,8 +6,7 @@
   
  [data-theme="dark"] {
   --bg-color: #161625;
-  --font-color: #DEDEDE;
- 
+  --font-color: #DEDEDE; 
  }
 
 * {
@@ -38,7 +37,7 @@ nav {
   width: 3.5rem;
   height: 2rem;
   margin-left: auto;
-  
+ 
 }
 
 .switch input {
@@ -56,13 +55,15 @@ nav {
   bottom: 0;
   background-color: #ccc;
   transition: .4s;
+  border: 0.5px solid white;
+  
 }
 
 .slider:before {
   position: absolute;
   content: "";
   width: 2rem;
-  height: 2rem;
+  height: 1.9rem;
   left: 0;
   bottom: 0;
   background-color: white;
@@ -70,13 +71,12 @@ nav {
 }
 
 input:checked + .slider {
-  background-color: #0b58b0;
+  background-color: #161625;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
 }
-
 
 .slider.round {
   border-radius: 1rem;
@@ -93,12 +93,10 @@ input:checked + .slider:before {
   margin-left: 0.8rem;
 }
 
-
-.wrapper {
+section {
  display: flex;
  }
 
- 
 ul {
     margin-left: 2rem;
 }
@@ -127,9 +125,9 @@ a:visited {
 
 }
 
-.side-bar {
+aside {
     display: flex;
-    
+  
 }
 
 .fab, .fas {
@@ -143,11 +141,10 @@ a:visited {
   color: var(--link-color);
 }
 
-.side-bar li {
+aside li {
     margin-top: 2rem;
   
 }
-
 
 .image-grid {
   margin-left: 4rem;
@@ -265,8 +262,6 @@ a:visited {
 
 .switch-text {
   padding-top:0;
-}
-
 }
 
 
