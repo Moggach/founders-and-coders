@@ -2,23 +2,14 @@
 :root {
   --bg-color: #f7f9fb;
   --font-color: #2d2d2d;
-  --link-color: #DEDEDE;
-  
-  
-  
  }
   
  [data-theme="dark"] {
   --bg-color: #161625;
   --font-color: #DEDEDE;
-  --link-color: #2d2d2d;
-  
-  
+ 
  }
  
-
-
-
 
 
 * {
@@ -130,11 +121,17 @@ li:hover {
 a {
   text-decoration: none
 }
+
+li .active {
+ text-decoration: underline;
+ color: var(--font-color);
+
+}
+
 a:visited {
   color: var(--font-color);
 
 }
-
 
 .side-bar {
     display: flex;
@@ -263,6 +260,7 @@ a:visited {
 .cv-content {
   outline: black 1px solid;
   margin-left: 4rem;
+  width: 80%;
 }
 
 @media only screen and (max-width: 600px) {
