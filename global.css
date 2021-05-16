@@ -116,16 +116,22 @@ a {
   text-decoration: none
 }
 
-li .active {
- text-decoration: underline;
- color: var(--font-color);
-
+a:hover {
+  text-decoration: underline;
 }
 
 a:visited {
   color: var(--font-color);
 
 }
+
+
+li .active {
+ text-decoration: underline;
+ color: var(--font-color);
+
+}
+
 
 aside {
     display: flex;
@@ -178,6 +184,7 @@ aside li {
 .caption03 { grid-area: caption03; }
 
 .caption04 { grid-area: caption04; }
+
 
  img {
   width: 100%;
@@ -260,6 +267,10 @@ article {
   line-height: 1.8rem;
 }
 
+article > h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 @media only screen and (max-width: 800px) {
 
 .switch-text {
@@ -284,16 +295,16 @@ display: none;
   display: none;
 }
   
-.wrapper {display: block;}
+section {display: block;}
 
- .side-bar {
+ aside {
    margin-bottom: 2rem;
    margin-top: -2rem;
   
  }
 
 
- .side-bar > ul {
+ aside > ul {
    display: flex;
    font-size: x-small;
    margin-top: -2.5rem;
@@ -338,8 +349,9 @@ li {
     
   }
 
-  .cv-content {
+  article {
     margin-left: 0;
-    width: 90%;
+    width: 95%;
   }
 }
+};
