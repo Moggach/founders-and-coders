@@ -113,25 +113,24 @@ li:hover {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+a:visited {
+  color: var(--font-color);
+  
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: var(--font-color);
-
-}
-
-
 li .active {
  text-decoration: underline;
  color: var(--font-color);
 
 }
-
 
 aside {
     display: flex;
