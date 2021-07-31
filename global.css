@@ -1,15 +1,12 @@
-
 :root {
   --bg-color: #f7f9fb;
   --font-color: #2d2d2d;
-  
- }
-  
- [data-theme="dark"] {
+}
+
+[data-theme='dark'] {
   --bg-color: #161625;
-  --font-color: #DEDEDE; 
- 
- }
+  --font-color: #dedede;
+}
 
 * {
   box-sizing: border-box;
@@ -19,9 +16,8 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: var(--font-color);
-
 }
 
 nav {
@@ -39,7 +35,6 @@ nav {
   width: 3.5rem;
   height: 2rem;
   margin-left: auto;
- 
 }
 
 .switch input {
@@ -56,20 +51,19 @@ nav {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
   border: 0.5px solid white;
-  
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   width: 2rem;
   height: 1.9rem;
   left: 0;
   bottom: 0;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -96,20 +90,20 @@ input:checked + .slider:before {
 }
 
 section {
- display: flex;
- }
+  display: flex;
+}
 
 ul {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a {
@@ -119,7 +113,6 @@ a {
 
 a:visited {
   color: var(--font-color);
-  
 }
 
 a:hover {
@@ -127,17 +120,16 @@ a:hover {
 }
 
 li .active {
- text-decoration: underline;
- color: var(--font-color);
-
+  text-decoration: underline;
+  color: var(--font-color);
 }
 
 aside {
-    display: flex;
-  
+  display: flex;
 }
 
-.fab, .fas {
+.fab,
+.fas {
   color: var(--font-color);
 }
 
@@ -149,8 +141,7 @@ aside {
 }
 
 aside li {
-    margin-top: 2rem;
-  
+  margin-top: 2rem;
 }
 
 .image-grid {
@@ -160,59 +151,70 @@ aside li {
   grid-template-columns: 2fr 2fr;
   gap: 1rem 1rem;
   grid-template-areas:
-    "myImg1 myImg2"
-    "caption01 caption02"
-    "myIm3 myImg4"
-    "caption03 caption04";
-  
-
+    'myImg1 myImg2'
+    'caption01 caption02'
+    'myIm3 myImg4'
+    'caption03 caption04';
 }
 
-.caption01 { grid-area: caption01; }
+.caption01 {
+  grid-area: caption01;
+}
 
-.caption02 { grid-area: caption02; }
+.caption02 {
+  grid-area: caption02;
+}
 
-.myImg1 { grid-area: myImg1; }
+.myImg1 {
+  grid-area: myImg1;
+}
 
-.myImg2 { grid-area: myImg2; }
+.myImg2 {
+  grid-area: myImg2;
+}
 
-.myImg3 { grid-area: myImg3; }
+.myImg3 {
+  grid-area: myImg3;
+}
 
-.myImg4 { grid-area: myImg4; }
+.myImg4 {
+  grid-area: myImg4;
+}
 
-.caption03 { grid-area: caption03; }
+.caption03 {
+  grid-area: caption03;
+}
 
-.caption04 { grid-area: caption04; }
+.caption04 {
+  grid-area: caption04;
+}
 
-
- img {
+img {
   width: 100%;
   height: auto;
   cursor: pointer;
- }
+}
 
- #myImg2 {
-   background-color: #e9ecef;
- }
+#myImg2 {
+  background-color: #e9ecef;
+}
 
- img:hover{
+img:hover {
   filter: brightness(80%);
   transition: 0.3s;
-
 }
- 
+
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 8rem; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8rem;
   left: 0;
   top: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9); 
+  background-color: rgba(0, 0, 0, 0.9);
 }
-
 
 .modal-content {
   margin: auto;
@@ -231,16 +233,20 @@ aside li {
   height: 150px;
 }
 
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-
 
 .close {
   position: absolute;
@@ -271,86 +277,69 @@ article > h1 {
   margin-bottom: 0.5rem;
 }
 @media only screen and (max-width: 800px) {
-
-.switch-text {
-  padding-top:0;
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-  nav {
-    font-size: medium;
+  .switch-text {
+    padding-top: 0;
   }
 
- 
-.switch {
+  @media only screen and (max-width: 600px) {
+    nav {
+      font-size: medium;
+    }
 
-display: none;
-}
+    .switch {
+      display: none;
+    }
 
-.switch-text {
-  display: none;
-}
-  
-section {display: block;}
+    .switch-text {
+      display: none;
+    }
 
- aside {
-   margin-bottom: 2rem;
-   margin-top: -2rem;
-  
- }
+    section {
+      display: block;
+    }
 
+    aside {
+      margin-bottom: 2rem;
+      margin-top: -2rem;
+    }
 
- aside > ul {
-   display: flex;
-   font-size: x-small;
-   margin-top: -2.5rem;
- }
- 
-li {
-   
-   margin-right: 0.5rem;
- }
- 
+    aside > ul {
+      display: flex;
+      font-size: x-small;
+      margin-top: -2.5rem;
+    }
 
+    li {
+      margin-right: 0.5rem;
+    }
 
+    .image-grid {
+      margin: 0 auto;
+      height: 70vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4fr 1fr 4fr 1fr;
+      grid-template-areas:
+        'img01'
+        'caption01'
+        'img02'
+        'caption02'
+        'img03'
+        'caption03'
+        'img04'
+        'caption04';
+    }
 
-  .image-grid {
-    
-    margin: 0 auto;
-    height: 70vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 4fr 1fr;
-    grid-template-areas:
-    "img01"
-    "caption01"
-    "img02"
-    "caption02"
-    "img03"
-    "caption03"
-    "img04"
-    "caption04"
-    ;
-    
-   
-   
+    .modal-content {
+      width: 80%;
+      padding-top: 40%;
+    }
+    .close {
+      top: 25%;
+    }
+
+    article {
+      margin-left: 0;
+      width: 95%;
+    }
   }
-
-  .modal-content {
-    width: 80%;
-    padding-top: 40%;
-  }
-  .close {
-    top: 25%;
-    
-    
-  }
-
-  article {
-    margin-left: 0;
-    width: 95%;
-  }
-}
-};
+} ;
